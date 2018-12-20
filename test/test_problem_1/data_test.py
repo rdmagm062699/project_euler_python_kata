@@ -11,3 +11,7 @@ class TestData:
     def test_get_eligible_numbers_returns_expected_for_3(self):
         numbers = get_eligible_numbers(3)
         assert numbers == [3]
+
+    def test_get_eligible_numbers_returns_expected_for_5(self):
+        numbers = get_eligible_numbers(5)
+        assert numbers == [3, 5]
