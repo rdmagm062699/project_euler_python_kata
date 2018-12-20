@@ -1,6 +1,6 @@
 import pytest
 
-from problem_1.calculate import get_sum_of_numbers_divisible_by_three_and_five
+from problem_1.solution.calculate import get_sum_of_numbers_divisible_by_three_and_five
 
 class TestCalculate:
 

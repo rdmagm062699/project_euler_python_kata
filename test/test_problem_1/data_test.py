@@ -1,6 +1,6 @@
 import pytest
 
-from problem_1.data import get_eligible_numbers
+from problem_1.solution.data import get_eligible_numbers
 
 class TestData:
 
