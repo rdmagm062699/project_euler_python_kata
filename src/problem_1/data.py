@@ -1,8 +1,6 @@
 
 def get_eligible_numbers(max_number):
-    if max_number == 5:
-        return [3, 5]
-    elif max_number == 3:
-        return [3]
+    return [number for number in range(max_number + 1) if _is_eligible(number)]
 
-    return []
+def _is_eligible(number):
+    return number > 0 and (number % 3 == 0 or number % 5 == 0)

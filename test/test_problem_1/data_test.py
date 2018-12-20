@@ -10,8 +10,13 @@ class TestData:
 
     def test_get_eligible_numbers_returns_expected_for_3(self):
         numbers = get_eligible_numbers(3)
+        print(numbers)
         assert numbers == [3]
 
     def test_get_eligible_numbers_returns_expected_for_5(self):
         numbers = get_eligible_numbers(5)
         assert numbers == [3, 5]
+
+    def test_get_eligible_numbers_returns_expected_for_16(self):
+        numbers = get_eligible_numbers(16)
+        assert numbers == [3, 5, 6, 9, 10, 12, 15]
