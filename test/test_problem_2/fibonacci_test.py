@@ -11,3 +11,7 @@ class TestGetFibonacciUpTo:
     def test_returns_base_fibonacci_if_3(self):
         fibonacci = get_fibonacci_up_to(3)
         assert fibonacci == [1, 2]
+
+    def test_returns_expected_fibonacci_if_4(self):
+        fibonacci = get_fibonacci_up_to(4)
+        assert fibonacci == [1, 2, 3]
