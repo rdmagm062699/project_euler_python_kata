@@ -1,3 +1,4 @@
 
 def sum_even_numbers(list_of_numbers):
-    return 0
+    evens = [number for number in list_of_numbers if number % 2 == 0]
+    return sum(evens)
