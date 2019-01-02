@@ -1,3 +1,5 @@
 
 def get_possible_factors(num_of_digits):
-    return list(range(1,10))
+    lower = 10**(num_of_digits-1)
+    upper = 10**(num_of_digits)
+    return list(range(lower,upper))
