@@ -1,3 +1,3 @@
 
 def is_palindrome(value):
-    pass
+    return False;
