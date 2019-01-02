@@ -1,6 +1,7 @@
 
 def is_palindrome(value):
-    if value == 11:
+    digits = [digit for digit in str(value)]
+    if digits == list(reversed(digits)):
         return True
 
     return False
