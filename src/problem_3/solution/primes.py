@@ -1,8 +1,5 @@
 
 def get_primes(number):
-    if number <= 3:
-        return [number]
-
     primes = []
     next_prime = 2
     while next_prime < number:
