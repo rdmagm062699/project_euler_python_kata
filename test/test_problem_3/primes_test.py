@@ -23,3 +23,8 @@ class TestGetFibonacciUpTo:
         primes = get_primes(6)
 
         assert primes == [2, 3]
+
+    def test_get_primes_for_28(self):
+        primes = get_primes(28)
+
+        assert primes == [2, 2, 7]
