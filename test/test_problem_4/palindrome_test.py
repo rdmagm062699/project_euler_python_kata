@@ -15,3 +15,7 @@ class TestIsPalindrome:
     def test_is_palindrome_1122(self):
         test = is_palindrome(1122)
         assert test == False, 'got {}'.format(test)
+
+    def test_is_palindrome_5225(self):
+        test = is_palindrome(5225)
+        assert test == True, 'got {}'.format(test)
