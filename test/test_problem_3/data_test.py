@@ -8,3 +8,8 @@ class TestGetPossibleFactors:
         factors = get_possible_factors(1)
         expected_factors = list(range(1,10))
         assert factors == expected_factors, 'got {}'.format(factors)
+
+    def test_get_four_digit_factors(self):
+        factors = get_possible_factors(4)
+        expected_factors = list(range(1000,100000))
+        assert factors == expected_factors, 'got {}'.format(factors)
