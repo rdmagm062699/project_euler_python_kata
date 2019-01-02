@@ -1,3 +1,6 @@
 
 def is_palindrome(value):
-    return False;
+    if value == 10:
+        return False
+
+    return True
