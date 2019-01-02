@@ -13,3 +13,8 @@ class TestGetFibonacciUpTo:
         primes = get_primes(3)
 
         assert primes == [3]
+        
+    def test_get_primes_for_4(self):
+        primes = get_primes(4)
+
+        assert primes == [2, 2]
