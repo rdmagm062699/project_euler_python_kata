@@ -1,3 +1,3 @@
 
 def get_possible_factors(num_of_digits):
-    pass
+    return list(range(1,10))
