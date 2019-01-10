@@ -11,3 +11,7 @@ class TestGetLargestPalindrome:
     def test_get_largest_palindrome_for_2_digit(self):
         value = get_largest_palindrome(2)
         assert value == 9009
+
+    def test_get_largest_palindrome_for_3_digit(self):
+        value = get_largest_palindrome(3)
+        assert value == 906609
