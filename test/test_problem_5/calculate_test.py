@@ -6,3 +6,7 @@ class TestCalculate:
     def test_smallest_number_divisible_by_1_to_5(self):
         value = get_smallest_number_divisible_by_range(max_divisor=5)
         assert value == 60
+
+    def test_smallest_number_divisible_by_1_to_10(self):
+        value = get_smallest_number_divisible_by_range(max_divisor=10)
+        assert value == 2520
