@@ -19,3 +19,7 @@ class TestGetDivisorsToCheck:
     def test_2_returns_expected_value(self):
         value = get_divisors_to_check(max_divisor=2)
         assert value == [2]
+
+    def test_2_returns_expected_value(self):
+        value = get_divisors_to_check(max_divisor=3)
+        assert value.sort() == [1,2]
