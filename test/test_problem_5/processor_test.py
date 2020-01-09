@@ -24,3 +24,8 @@ class TestGetDivisorsToCheck:
         value = get_divisors_to_check(max_divisor=3)
         value.sort()
         assert value == [2, 3], 'got {}'.format(value)
+
+    def test_4_returns_expected_value(self):
+        value = get_divisors_to_check(max_divisor=4)
+        value.sort()
+        assert value == [3, 4], 'got {}'.format(value)
