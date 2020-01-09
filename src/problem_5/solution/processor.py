@@ -7,3 +7,6 @@ def check_all_divisors(dividend, max_divisor):
             break
    
     return result
+
+def get_divisors_to_check(max_divisor):
+    pass
