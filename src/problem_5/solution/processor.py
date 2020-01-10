@@ -9,5 +9,9 @@ def check_all_divisors(dividend, max_divisor):
     return result
 
 def get_divisors_to_check(max_divisor):
-    divisors = [*range(2, max_divisor+1)]
-    return divisors[-2:]
+    result = [divisor for divisor in range(max_divisor, 0, -1) if _is_divisor_we_check(divisor, max_divisor)]
+    
+    return result
+
+def _is_divisor_we_check(divisor, max_divisor):
+    return divisor == max_divisor or max_divisor % divisor != 0
