@@ -3,7 +3,7 @@ from .processor import check_all_divisors, get_divisors_to_check
 def get_smallest_number_divisible_by_range(max_divisor):
     done = False
     multiplier = 0
-    dividend_increase_by = max_divisor
+    dividend_increase_by = _get_dividend_increase_by(max_divisor)
     divisors = get_divisors_to_check(max_divisor)
 
     while done == False:
@@ -13,3 +13,6 @@ def get_smallest_number_divisible_by_range(max_divisor):
             done = True
 
     return dividend
+
+def _get_dividend_increase_by(max_divisor):
+    return 2520 if max_divisor >= 10 else max_divisor
