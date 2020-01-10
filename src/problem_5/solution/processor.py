@@ -1,7 +1,7 @@
 
-def check_all_divisors(dividend, max_divisor):
+def check_all_divisors(dividend, all_divisors):
     result = True
-    for divisor in range(max_divisor, 0, -1):
+    for divisor in all_divisors:
         if dividend % divisor != 0:
             result = False
             break

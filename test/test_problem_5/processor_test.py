@@ -4,15 +4,15 @@ from problem_5.solution.processor import check_all_divisors, get_divisors_to_che
 
 class TestCheckAllDivisors:
     def test_4_not_evenly_divisible_by_all_numbers_from_1_to_3(self):
-        value = check_all_divisors(dividend=4, max_divisor=3)
+        value = check_all_divisors(dividend=4, all_divisors=range(1, 4))
         assert value == False
 
     def test_6_is_evenly_divisible_by_all_humbers_from_1_to_3(self):
-        value = check_all_divisors(dividend=6, max_divisor=3)
+        value = check_all_divisors(dividend=6, all_divisors=range(1, 4))
         assert value == True
 
     def test_12_is_evenly_divisible_by_all_humbers_from_1_to_4(self):
-        value = check_all_divisors(dividend=12, max_divisor=4)
+        value = check_all_divisors(dividend=12, all_divisors=range(1, 5))
         assert value == True
 
 class TestGetDivisorsToCheck:
