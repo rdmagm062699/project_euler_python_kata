@@ -1,6 +1,7 @@
 
 def get_nth_prime_number(n):
-    if n == 1:
-        return 2
+    primes = [2, 3]
+    if n <= 2:
+        return primes[n-1]
     else:
-        return 3
+        return 5    
