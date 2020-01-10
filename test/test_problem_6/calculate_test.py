@@ -9,4 +9,4 @@ class TestCalculate:
 
     def test_get_square_of_sum_for_max_of_10(self):
         value = get_square_of_sum(max_number=10)
-        assert value == 2640 , 'got {}'.format(value)
+        assert value == 3025 , 'got {}'.format(value)

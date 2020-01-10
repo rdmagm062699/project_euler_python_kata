@@ -4,4 +4,4 @@ def get_sum_of_squares(max_number):
     return sum(squares)
 
 def get_square_of_sum(max_number):
-    pass
+    return sum(range(1, max_number + 1)) ** 2
