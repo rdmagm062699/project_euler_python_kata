@@ -14,3 +14,7 @@ class TestCalculate:
     def test_3rd_prime_number(self):
         value = get_nth_prime_number(3)
         assert value == 5, 'got {}'.format(value)
+
+    def test_4th_prime_number(self):
+        value = get_nth_prime_number(4)
+        assert value == 7, 'got {}'.format(value)
