@@ -8,3 +8,6 @@ class TestPrime:
         assert is_prime_number(4) == False
         assert is_prime_number(6) == False
         assert is_prime_number(8) == False
+
+    def test_9_is_not_prime(self):
+        assert is_prime_number(9) == False
