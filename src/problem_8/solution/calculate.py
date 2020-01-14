@@ -1,10 +1,13 @@
 
 def get_largest_product_of_adjacent_digits(number, num_adjacent_digits):
-    number_string = str(number)
-    _validate(number_string, num_adjacent_digits)
+    digits = [int(digit) for digit in str(number)]
+    _validate(digits, num_adjacent_digits)
+
+    return digits[0] * digits[1]
+
     
-def _validate(number_string, num_adjacent_digits):
-    if num_adjacent_digits > len(number_string):
+def _validate(digits, num_adjacent_digits):
+    if num_adjacent_digits > len(digits):
         raise Exception(
             "Number of adjacent digits cannot be larger than the length of the number")
 
