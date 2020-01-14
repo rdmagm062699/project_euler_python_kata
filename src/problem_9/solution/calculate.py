@@ -10,4 +10,4 @@ def get_nth_primitave_pythagorean_triple(n):
     return (a, b, c)
 
 def get_pythagorean_triple_sums(initial_triple, stop_value):
-    pass
+    return initial_triple
