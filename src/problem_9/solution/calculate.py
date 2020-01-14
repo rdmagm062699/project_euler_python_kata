@@ -1,6 +1,10 @@
 
 def get_nth_primitave_pythagorean_triple(n):
-    if n == 1:
-        return (3,4,5)
-    else:
-        return(5,12,13)
+    m = 2 + (n - 1)
+    n = 1 + (n - 1)
+
+    a = (m ** 2) - (n ** 2)
+    b = 2 * (m * n)
+    c = (m ** 2) + (n ** 2)
+
+    return (a, b, c)
