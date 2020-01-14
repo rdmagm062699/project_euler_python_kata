@@ -11,3 +11,7 @@ class TestPrimitavePythagoreanTriples:
        value = get_nth_primitave_pythagorean_triple(2)
        assert value == (5, 12, 13), "got {}".format(value)
 
+    def test_get_third_primative_pythagorean_triple(self):
+       value = get_nth_primitave_pythagorean_triple(3)
+       assert value == (7, 24, 25), "got {}".format(value)
+
