@@ -18,7 +18,7 @@ class TestCalculate:
         assert value == 16, "got {}".format(value)
     
     def test_max_product_of_3_adjacent_digits_in_a_3_digit_number_is_expected_value(self):
-        value = get_largest_product_of_adjacent_digits(444, 2)
+        value = get_largest_product_of_adjacent_digits(444, 3)
         assert value == 64, "got {}".format(value)
 
     def test_max_product_of_adjacent_digits_when_number_of_total_digits_is_greater_is_expected_value(self):
