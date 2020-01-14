@@ -20,3 +20,8 @@ class TestPythagoreanTripleSums:
         triple = (3, 4, 5)
         value = get_pythagorean_triple_sums(triple, 13)
         assert value == (3, 4, 5), "got {}".format(value)
+
+    def test_sum_of_pythagorean_triple_with_stop_value_36(self):
+        triple = (3, 4, 5)
+        value = get_pythagorean_triple_sums(triple, 36)
+        assert value == (9, 12, 15), "got {}".format(value)
