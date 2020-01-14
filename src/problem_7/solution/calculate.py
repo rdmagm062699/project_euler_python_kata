@@ -12,7 +12,7 @@ def _get_n_primes(n):
     add_value = -1
     while len(primes) < n:
         next_value = (6 * multiplier) + add_value
-        if _is_prime_number(next_value):
+        if _is_prime_number(next_value, primes):
             primes.append(next_value)
         if add_value > 0:
             multiplier += 1
@@ -20,14 +20,11 @@ def _get_n_primes(n):
     
     return primes
 
-def _is_prime_number(number):
+def _is_prime_number(number, current_primes):
     is_prime = True
-    divisor = 3
-    while divisor < number:
+    for divisor in current_primes:
         if number % divisor == 0:
             is_prime = False
             break
-
-        divisor += 2
 
     return is_prime
