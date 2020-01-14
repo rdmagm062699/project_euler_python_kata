@@ -1,6 +1,6 @@
 import pytest
 
-from problem_9.solution.calculate import get_nth_primitave_pythagorean_triple
+from problem_9.solution.calculate import get_nth_primitave_pythagorean_triple, get_pythagorean_triple_sums
 
 class TestPrimitavePythagoreanTriples:
     def test_get_first_primitave_pythagorean_triple(self):
@@ -15,3 +15,8 @@ class TestPrimitavePythagoreanTriples:
        value = get_nth_primitave_pythagorean_triple(3)
        assert value == (7, 24, 25), "got {}".format(value)
 
+class TestPythagoreanTripleSums:
+    def test_sum_of_pythagorean_triple_with_stop_value_13(self):
+        triple = (3, 4, 5)
+        value = get_pythagorean_triple_sums(triple, 13)
+        assert value == (3, 4, 5), "got {}".format(value)
