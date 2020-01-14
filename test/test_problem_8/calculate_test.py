@@ -14,3 +14,7 @@ class TestCalculate:
     def test_get_largest_sum_of_1_adjacent_digit_within_a_multiple_digit_number_is_that_number(self):
         value = get_largest_sum_of_adjacent_digits(121, num_adjacent_digits=1)
         assert value == 2, "got {}".format(value)
+
+    def test_get_largest_sum_of_multiple_digits_is_expected_value(self):
+        value = get_largest_sum_of_adjacent_digits(12, num_adjacent_digits=2)
+        assert value == 3, "got {}".format(value)
