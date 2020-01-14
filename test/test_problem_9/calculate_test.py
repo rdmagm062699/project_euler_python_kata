@@ -16,9 +16,9 @@ class TestPrimitavePythagoreanTriples:
        assert value == (7, 24, 25), "got {}".format(value)
 
 class TestPythagoreanTripleSums:
-    def test_sum_of_pythagorean_triple_with_stop_value_13(self):
+    def test_sum_of_pythagorean_triple_with_stop_value_11(self):
         triple = (3, 4, 5)
-        value = get_pythagorean_triple_sums(triple, 13)
+        value = get_pythagorean_triple_sums(triple, 11)
         assert value == (3, 4, 5), "got {}".format(value)
 
     def test_sum_of_pythagorean_triple_with_stop_value_36(self):
