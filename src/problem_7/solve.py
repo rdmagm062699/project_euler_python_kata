@@ -1,5 +1,5 @@
-from solution.problem import solve_difference_square_of_sum_and_sum_of_square
+from solution.calculate import get_nth_prime_number
 
-solution = solve_difference_square_of_sum_and_sum_of_square(100)
+solution = get_nth_prime_number(10001)
 
-print('The solution for Problem 6 is {}'.format(solution))
+print('The solution for Problem 7 is {}'.format(solution))
