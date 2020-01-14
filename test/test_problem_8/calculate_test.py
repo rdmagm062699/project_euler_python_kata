@@ -13,6 +13,10 @@ class TestCalculate:
            get_largest_sum_of_adjacent_digits(number=11, num_adjacent_digits=1)
            assert e == "Number of adjacent digits must be greater than 1"
 
-    def test_max_product_of_2_adjacent_digits_in_a_2_digits_number_is_expected_value(self):
+    def test_max_product_of_2_adjacent_digits_in_a_2_digit_number_is_expected_value(self):
         value = get_largest_product_of_adjacent_digits(44, 2)
         assert value == 16, "got {}".format(value)
+    
+    def test_max_product_of_3_adjacent_digits_in_a_3_digit_number_is_expected_value(self):
+        value = get_largest_product_of_adjacent_digits(444, 2)
+        assert value == 64, "got {}".format(value)
