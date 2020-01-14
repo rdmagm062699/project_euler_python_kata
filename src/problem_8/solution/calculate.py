@@ -1,6 +1,7 @@
 
 def get_largest_sum_of_adjacent_digits(number, num_adjacent_digits):
-    if num_adjacent_digits > len(str(number)):
+    number_string = str(number)
+    if num_adjacent_digits > len(number_string):
         raise Exception("Number of adjacent digits cannot be larger than the length of the number")
 
-    return number
+    return int(max(number_string))
