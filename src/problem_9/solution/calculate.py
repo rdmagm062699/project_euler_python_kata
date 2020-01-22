@@ -8,7 +8,7 @@ def get_triple_where_sum_is_n(n):
         while b < n - a:
             c = n - a - b
 
-            if (a ** 2) + (b ** 2) == (c ** 2):
+            if _is_pythagorean_triple(a, b, c):
                 result = (a, b, c)
                 break
 
@@ -20,3 +20,6 @@ def get_triple_where_sum_is_n(n):
         a += 1
     
     return result
+
+def _is_pythagorean_triple(a, b, c):
+    return (a ** 2) + (b ** 2) == (c ** 2)
