@@ -3,7 +3,7 @@ def get_triple_where_sum_is_n(n):
     result = None
 
     a = 1
-    while not result:
+    while not result and a < n:
         b = a
         while b < n - a:
             c = n - a - b
