@@ -14,3 +14,7 @@ class TestGetSumOfPrimesLessThanN:
     def test_sum_of_primes_less_than_4(self):
         value = get_sum_of_primes_less_than_n(4)
         assert value == 5
+    
+    def test_sum_of_primes_less_than_10(self):
+        value = get_sum_of_primes_less_than_n(10)
+        assert value == 17
