@@ -6,3 +6,7 @@ class TestGetTripleWhereSumIsN:
     def test_sum_12(self):
         value = get_triple_where_sum_is_n(12)
         assert value == (3, 4, 5)
+
+    def test_sum_12(self):
+        value = get_triple_where_sum_is_n(132)
+        assert value == (11, 60, 61)
