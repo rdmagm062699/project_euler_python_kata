@@ -23,3 +23,6 @@ def get_triple_where_sum_is_n(n):
 
 def _is_pythagorean_triple(a, b, c):
     return (a ** 2) + (b ** 2) == (c ** 2)
+
+def get_pythagorean_triple_product(triple):
+    pass
