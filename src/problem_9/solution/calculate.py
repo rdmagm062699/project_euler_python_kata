@@ -25,4 +25,4 @@ def _is_pythagorean_triple(a, b, c):
     return (a ** 2) + (b ** 2) == (c ** 2)
 
 def get_pythagorean_triple_product(triple):
-    return 70
+    return triple[0] * triple[1] * triple[2]
