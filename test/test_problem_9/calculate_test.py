@@ -19,3 +19,7 @@ class TestGetPythagoreanTripleProduct:
     def test_3_4_5(self):
         value = get_pythagorean_triple_product((3, 4, 5))
         assert value == 70
+
+    def test_11_60_61(self):
+        value = get_pythagorean_triple_product((11, 60, 61))
+        assert value == 40260
