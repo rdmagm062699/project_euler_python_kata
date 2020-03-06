@@ -9,7 +9,7 @@ class TestGetMaxProductFromAllRows:
         assert value == 24
 
     def test_two_rows_returns_max_product_from_all_rows(self):
-        grid = [[1, 2, 3, 4],
-                [2, 3, 4, 5]]
+        grid = [[1, 2, 3, 4, 5],
+                [2, 3, 4, 5, 6]]
         value = get_max_product_from_all_rows(grid)
-        assert value == 120
+        assert value == 360
