@@ -12,10 +12,10 @@ class TestGetMaxProductFromAllColumns:
         assert value == 24
 
     def test_two_rows_returns_max_product_from_all_rows(self):
-        grid = [[1, 6],
-                [2, 7],
-                [3, 8],
-                [4, 9], 
-                [5, 10]]
+        grid = [[1, 2],
+                [2, 3],
+                [3, 4],
+                [4, 5], 
+                [5, 6]]
         value = get_max_product_from_all_columns(grid)
         assert value == 360
