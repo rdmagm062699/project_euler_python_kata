@@ -9,7 +9,7 @@ class TestGetMaxProductFromAllDiagonals:
                 [0, 0, 3, 0],
                 [0, 0, 0, 4]]
         value = get_max_product_from_all_diagonals(grid)
-        assert value == 24
+        assert value == 24, 'got {}'.format(value)
 
     def test_single_diagonal_top_left_to_bottom_right_and_its_opposite(self):
         grid = [[1, 0, 0, 5],
@@ -17,7 +17,7 @@ class TestGetMaxProductFromAllDiagonals:
                 [0, 3, 3, 0],
                 [2, 0, 0, 4]]
         value = get_max_product_from_all_diagonals(grid)
-        assert value == 120
+        assert value == 120, 'got {}'.format(value)
 
     def test_diagonal_that_is_not_the_center_diagonal(self):
         grid = [[1, 2, 0, 0, 0],

@@ -1,5 +1,8 @@
 from src.problem_11.solution.quads import get_max_product_of_adjacent
 
+X = 0
+Y = 1
+
 def get_max_product_from_all_diagonals(grid):
     max_value = 0
     for diagonal in _get_all_diagonals(grid):
@@ -10,13 +13,26 @@ def get_max_product_from_all_diagonals(grid):
     return max_value
 
 def _get_all_diagonals(grid):
-    diagonal = []
-    opposite = []
-    for coord in [(i,i) for i in range(0, len(grid))]:
-        x = coord[0]
-        oppo_x = abs(len(grid) - 1 - x)
-        y = coord[1]
-        diagonal.append(grid[x][y])
-        opposite.append(grid[oppo_x][y])
+    diagonals = []
+    for coord in [(0,i) for i in range(0, len(grid))]:
+        if coord[X] + 3 < len(grid) and coord[Y] + 3 < len(grid[0]):
+            diagonals.append(
+                [
+                    grid[coord[X]][coord[Y]],
+                    grid[coord[X] + 1][coord[Y] + 1],
+                    grid[coord[X] + 2][coord[Y] + 2],
+                    grid[coord[X] + 3][coord[Y] + 3],
+                ]
+            )
 
-    return [diagonal, opposite]
+        if coord[X] + 3 < len(grid) and coord[Y] - 3 >= 0:
+            diagonals.append(
+                [
+                    grid[coord[X]][coord[Y]],
+                    grid[coord[X] + 1][coord[Y] - 1],
+                    grid[coord[X] + 2][coord[Y] - 2],
+                    grid[coord[X] + 3][coord[Y] - 3],
+                ]
+            )
+
+    return diagonals
