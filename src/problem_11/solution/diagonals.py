@@ -14,25 +14,26 @@ def get_max_product_from_all_diagonals(grid):
 
 def _get_all_diagonals(grid):
     diagonals = []
-    for coord in [(0,i) for i in range(0, len(grid))]:
-        if coord[X] + 3 < len(grid) and coord[Y] + 3 < len(grid[0]):
-            diagonals.append(
-                [
-                    grid[coord[X]][coord[Y]],
-                    grid[coord[X] + 1][coord[Y] + 1],
-                    grid[coord[X] + 2][coord[Y] + 2],
-                    grid[coord[X] + 3][coord[Y] + 3],
-                ]
-            )
+    for row in range(0, len(grid)):
+        for coord in [(row,col) for col in range(0, len(grid))]:
+            if coord[X] + 3 < len(grid) and coord[Y] + 3 < len(grid[0]):
+                diagonals.append(
+                    [
+                        grid[coord[X]][coord[Y]],
+                        grid[coord[X] + 1][coord[Y] + 1],
+                        grid[coord[X] + 2][coord[Y] + 2],
+                        grid[coord[X] + 3][coord[Y] + 3],
+                    ]
+                )
 
-        if coord[X] + 3 < len(grid) and coord[Y] - 3 >= 0:
-            diagonals.append(
-                [
-                    grid[coord[X]][coord[Y]],
-                    grid[coord[X] + 1][coord[Y] - 1],
-                    grid[coord[X] + 2][coord[Y] - 2],
-                    grid[coord[X] + 3][coord[Y] - 3],
-                ]
-            )
+            if coord[X] + 3 < len(grid) and coord[Y] - 3 >= 0:
+                diagonals.append(
+                    [
+                        grid[coord[X]][coord[Y]],
+                        grid[coord[X] + 1][coord[Y] - 1],
+                        grid[coord[X] + 2][coord[Y] - 2],
+                        grid[coord[X] + 3][coord[Y] - 3],
+                    ]
+                )
 
     return diagonals
