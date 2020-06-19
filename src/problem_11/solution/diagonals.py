@@ -26,7 +26,7 @@ def _get_all_diagonals(grid):
                     ]
                 )
 
-            if coord[X] + 3 < len(grid) and coord[Y] - 3 >= 0:
+            if _is_valid_backward_diagonal(coord[X], coord[Y], len(grid)):
                 diagonals.append(
                     [
                         grid[coord[X]][coord[Y]],
@@ -40,3 +40,6 @@ def _get_all_diagonals(grid):
 
 def _is_valid_forward_diagonal(x_coord, y_coord, num_rows, num_cols):
     return x_coord + 3 < num_rows and y_coord + 3 < num_cols
+
+def _is_valid_backward_diagonal(x_coord, y_coord, num_rows):
+    return x_coord + 3 < num_rows and y_coord - 3 >= 0
