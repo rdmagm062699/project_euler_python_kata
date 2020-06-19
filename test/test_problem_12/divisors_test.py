@@ -13,5 +13,5 @@ class TestGetNumberOfDivisors:
         assert divisors == 2, 'got {}'.format(divisors)
 
     def test_get_number_of_divisors_for_6(self):
-        divisors = get_number_of_divisors(3)
+        divisors = get_number_of_divisors(6)
         assert divisors == 4, 'got {}'.format(divisors)

@@ -1,6 +1,9 @@
 
 def get_number_of_divisors(number):
-    if number > 1:
-        return 2
+    result = 0
 
-    return 1
+    for divisor in range(1, number + 1):
+        if number % divisor == 0:
+            result += 1
+
+    return result
