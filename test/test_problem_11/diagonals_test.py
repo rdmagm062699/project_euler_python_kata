@@ -27,3 +27,12 @@ class TestGetMaxProductFromAllDiagonals:
                 [0, 0, 0, 0, 0]]
         value = get_max_product_from_all_diagonals(grid)
         assert value == 120, 'got {}'.format(value)
+
+    def test_diagonal_that_does_not_start_on_the_first_row(self):
+        grid = [[1, 0, 0, 0, 0],
+                [0, 2, 0, 0, 0],
+                [0, 0, 3, 0, 0],
+                [0, 0, 0, 4, 0],
+                [0, 0, 0, 0, 5]]
+        value = get_max_product_from_all_diagonals(grid)
+        assert value == 120, 'got {}'.format(value)
