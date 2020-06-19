@@ -16,7 +16,7 @@ def _get_all_diagonals(grid):
     diagonals = []
     for row in range(0, len(grid)):
         for coord in [(row,col) for col in range(0, len(grid))]:
-            if coord[X] + 3 < len(grid) and coord[Y] + 3 < len(grid[0]):
+            if _is_valid_forward_diagonal(coord[X], coord[Y], len(grid), len(grid[0])):
                 diagonals.append(
                     [
                         grid[coord[X]][coord[Y]],
@@ -37,3 +37,6 @@ def _get_all_diagonals(grid):
                 )
 
     return diagonals
+
+def _is_valid_forward_diagonal(x_coord, y_coord, num_rows, num_cols):
+    return x_coord + 3 < num_rows and y_coord + 3 < num_cols
