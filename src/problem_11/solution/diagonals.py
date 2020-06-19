@@ -1,4 +1,4 @@
-from src.problem_11.solution.quads import get_max_product_of_adjacent
+from .quads import get_max_product_of_adjacent
 
 X = 0
 Y = 1
