@@ -11,10 +11,18 @@ class TestGetMaxProductFromAdjacentQuads:
         value = get_max_product_from_adjacent_quads(grid)
         assert value == 81, 'got {}'.format(value)
 
-    def test_colulmn_is_max_produc(self):
+    def test_colulmn_is_max_product(self):
         grid = [[9, 3, 3, 3],
                 [9, 2, 0, 0],
                 [9, 0, 2, 0],
                 [9, 0, 0, 2]]
         value = get_max_product_from_adjacent_quads(grid)
         assert value == 6561, 'got {}'.format(value)
+
+    def test_diagonal_is_max_product(self):
+        grid = [[8, 3, 3, 3],
+                [1, 8, 0, 0],
+                [1, 0, 8, 0],
+                [1, 0, 0, 8]]
+        value = get_max_product_from_adjacent_quads(grid)
+        assert value == 4096, 'got {}'.format(value)
