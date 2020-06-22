@@ -8,3 +8,8 @@ class TestGetCollatzSequence:
         starting_number = 2
         sequence = get_sequence(starting_number)
         assert sequence == [2, 1], 'got {}'.format(sequence)
+
+    def test_sequence_starting_at_4(self):
+        starting_number = 4
+        sequence = get_sequence(starting_number)
+        assert sequence == [4, 2, 1], 'got {}'.format(sequence)
