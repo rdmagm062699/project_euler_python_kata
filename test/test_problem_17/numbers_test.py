@@ -22,6 +22,7 @@ class TestNumber(unittest.TestCase):
         self.assertEqual(get_number_name(number), name)
 
     @data(
+        [10, "ten"],
         [11, "eleven"], 
         [12, "twelve"], 
         [13, "thirteen"],
@@ -29,7 +30,7 @@ class TestNumber(unittest.TestCase):
         [15, "fifteen"], 
         [16, "sixteen"],
         [17, "seventeen"],
-        [18, "eightteen"],
+        [18, "eighteen"],
         [19, "nineteen"]
     )
     @unpack
