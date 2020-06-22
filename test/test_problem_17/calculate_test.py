@@ -6,3 +6,7 @@ class TestNumberOfLettersInNumberNames(unittest.TestCase):
 
     def test_max_of_1_has_3_letters(self):
         self.assertEqual(get_number_of_letters_in_number_names_from_1_to_n(1), 3)
+
+    def test_max_of_2_has_6_letters(self):
+        self.assertEqual(
+            get_number_of_letters_in_number_names_from_1_to_n(2), 6)
