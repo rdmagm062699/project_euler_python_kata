@@ -8,3 +8,8 @@ class TestGetDigitsOfSum:
         numbers = [0]
         value = get_first_n_digits_of_sum(numbers, 1)
         assert value == 0, 'got {}'.format(value)
+
+    def test_sum_of_one_and_nine_first_1_digit_returns_1(self):
+        numbers = [1,9]
+        value = get_first_n_digits_of_sum(numbers, 1)
+        assert value == 1, 'got {}'.format(value)
