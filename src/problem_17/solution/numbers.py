@@ -30,4 +30,14 @@ NUMBER_NAMES = {
 }
 
 def get_number_name(number):
-    return NUMBER_NAMES[number]
+    name = ""
+
+    if number > 20:
+        name = NUMBER_NAMES[number - (number % 10)]
+        number %= 10
+        name += "-" if number > 0 else ""
+
+    if number > 0:
+        name += NUMBER_NAMES[number]
+
+    return name
