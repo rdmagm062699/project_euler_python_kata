@@ -34,7 +34,8 @@ def get_number_name(number):
 
     if number >= 100:
         name = "{} hundred".format(NUMBER_NAMES[number // 100])
-        number = 0
+        number = number % 100
+        name += " and " if number > 0 else ""
 
     if number > 20:
         name = NUMBER_NAMES[number - (number % 10)]
