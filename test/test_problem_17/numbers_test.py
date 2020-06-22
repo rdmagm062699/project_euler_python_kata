@@ -21,4 +21,19 @@ class TestNumber(unittest.TestCase):
     def test_single_digits(self, number, name):
         self.assertEqual(get_number_name(number), name)
 
+    @data(
+        [11, "eleven"], 
+        [12, "twelve"], 
+        [13, "thirteen"],
+        [14, "fourteen"],
+        [15, "fifteen"], 
+        [16, "sixteen"],
+        [17, "seventeen"],
+        [18, "eightteen"],
+        [19, "nineteen"]
+    )
+    @unpack
+    def test_double_digits_less_than_twenty(self, number, name):
+        self.assertEqual(get_number_name(number), name)
+
 
