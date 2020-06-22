@@ -71,3 +71,6 @@ class TestNumber(unittest.TestCase):
 
     def test_one_hundred_and_one(self):
         self.assertEqual(get_number_name(101), "one hundred and one")
+
+    def test_three_hundred_and_forty_two(self):
+        self.assertEqual(get_number_name(342), "three hundred and forty-two")
