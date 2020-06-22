@@ -51,4 +51,7 @@ class TestNumber(unittest.TestCase):
     def test_double_digit_multiples_of_ten(self, number, name):
         self.assertEqual(get_number_name(number), name)
 
+    def test_twenty_on(self):
+        self.assertEqual(get_number_name(21), "twenty-one")
+
 
