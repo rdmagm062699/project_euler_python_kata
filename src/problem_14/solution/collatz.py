@@ -1,3 +1,3 @@
 
 def get_sequence(starting_number):
-    pass
+    return [starting_number, starting_number / 2]
