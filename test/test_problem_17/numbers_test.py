@@ -68,3 +68,6 @@ class TestNumber(unittest.TestCase):
     @unpack
     def test_hundreds(self, number, name):
         self.assertEqual(get_number_name(number), name)
+
+    def test_one_hundred_and_one(self):
+        self.assertEqual(get_number_name(101), "one hundred and one")
