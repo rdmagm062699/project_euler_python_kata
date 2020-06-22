@@ -1,3 +1,4 @@
 
 def get_first_n_digits_of_sum(numbers, n):
-    return str(numbers[0])
+    value = str(sum(numbers))
+    return value[0:n]

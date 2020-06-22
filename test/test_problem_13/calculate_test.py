@@ -16,6 +16,6 @@ class TestGetDigitsOfSum:
 
     def test_sum_of_eleven_and_twelve_first_2_digits_returns_23(self):
         numbers = [11, 12]
-        value = get_first_n_digits_of_sum(numbers, 1)
+        value = get_first_n_digits_of_sum(numbers, 2)
         assert value == '23', 'got {}'.format(value)
 
