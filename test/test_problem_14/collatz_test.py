@@ -13,3 +13,8 @@ class TestGetCollatzSequence:
         starting_number = 4
         sequence = get_sequence(starting_number)
         assert sequence == [4, 2, 1], 'got {}'.format(sequence)
+
+    def test_sequence_starting_at_3(self):
+        starting_number = 3
+        sequence = get_sequence(starting_number)
+        assert sequence == [3, 10, 5, 16, 8, 4, 2, 1], 'got {}'.format(sequence)
