@@ -51,4 +51,4 @@ def get_number_name(number):
     return name
 
 def count_letters_in_name(name):
-    return 3
+    return len(name)
