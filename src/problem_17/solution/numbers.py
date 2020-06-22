@@ -49,3 +49,6 @@ def get_number_name(number):
         name += NUMBER_NAMES[number]
 
     return name
+
+def count_letters_in_name(name):
+    pass

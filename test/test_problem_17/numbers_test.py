@@ -1,7 +1,7 @@
 import unittest
 from ddt import ddt, data, unpack
 
-from problem_17.solution.numbers import get_number_name
+from problem_17.solution.numbers import get_number_name, count_letters_in_name
 
 @ddt
 class TestNumberNames(unittest.TestCase):
@@ -77,3 +77,9 @@ class TestNumberNames(unittest.TestCase):
 
     def test_one_thousand(self):
         self.assertEqual(get_number_name(1000), "one thousand")
+
+
+class TestCountLettersInName(unittest.TestCase):
+
+    def test_one_has_3_letters(self):
+        self.assertEqual(count_letters_in_name("one"), 3)
