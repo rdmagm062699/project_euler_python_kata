@@ -54,4 +54,17 @@ class TestNumber(unittest.TestCase):
     def test_twenty_on(self):
         self.assertEqual(get_number_name(21), "twenty-one")
 
-
+    @data(
+        [100, "one hundred"],
+        [200, "two hundred"],
+        [300, "three hundred"],
+        [400, "four hundred"],
+        [500, "five hundred"],
+        [600, "six hundred"],
+        [700, "seven hundred"],
+        [800, "eight hundred"],
+        [900, "nine hundred"]
+    )
+    @unpack
+    def test_hundreds(self, number, name):
+        self.assertEqual(get_number_name(number), name)
