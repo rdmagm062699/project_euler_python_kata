@@ -51,5 +51,5 @@ def get_number_name(number):
     return name
 
 def count_letters_in_name(name):
-    name = name.replace("-", "")
+    name = name.replace("-", "").replace(" ", "")
     return len(name)
