@@ -89,3 +89,6 @@ class TestCountLettersInName(unittest.TestCase):
 
     def test_twenty_one_has_9_letters(self):
         self.assertEqual(count_letters_in_name("twenty-one"), 9)
+
+    def test_one_hundred_and_fifteen_has_20_letters(self):
+        self.assertEqual(count_letters_in_name("one hundred and fifteen"), 20)
