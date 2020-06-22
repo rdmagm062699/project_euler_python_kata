@@ -32,6 +32,9 @@ NUMBER_NAMES = {
 def get_number_name(number):
     name = ""
 
+    if number == 1000:
+        return "one thousand"
+
     if number >= 100:
         name = "{} hundred".format(NUMBER_NAMES[number // 100])
         number = number % 100
