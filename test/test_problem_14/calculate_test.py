@@ -7,8 +7,11 @@ class TestGetLongestCollatzSequence:
     def test_longest_sequence_with_max_starting_number_1(self):
         value = get_longest_collatz_sequence(1)
         assert value == 1, 'got {}'.format(value)
-        
-    
+
     def test_longest_sequence_with_max_starting_number_2(self):
         value = get_longest_collatz_sequence(2)
         assert value == 1, 'got {}'.format(value)
+
+    def test_longest_sequence_with_max_starting_number_3(self):
+        value = get_longest_collatz_sequence(3)
+        assert value == 3, 'got {}'.format(value)
