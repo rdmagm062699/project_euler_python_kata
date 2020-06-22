@@ -4,7 +4,7 @@ from ddt import ddt, data, unpack
 from problem_17.solution.numbers import get_number_name
 
 @ddt
-class TestNumber(unittest.TestCase):
+class TestNumberNames(unittest.TestCase):
 
     @data(
         [1, "one"], 
