@@ -37,4 +37,18 @@ class TestNumber(unittest.TestCase):
     def test_double_digits_less_than_twenty(self, number, name):
         self.assertEqual(get_number_name(number), name)
 
+    @data(
+        [20, "twenty"],
+        [30, "thirty"],
+        [40, "forty"],
+        [50, "fifty"],
+        [60, "sixty"],
+        [70, "seventy"],
+        [80, "eighty"],
+        [90, "ninety"]
+    )
+    @unpack
+    def test_double_digit_multiples_of_ten(self, number, name):
+        self.assertEqual(get_number_name(number), name)
+
 
