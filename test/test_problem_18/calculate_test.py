@@ -10,9 +10,16 @@ class TestMaxPathDownTriangleOfNumbers(unittest.TestCase):
         ]
         self.assertEqual(get_max_path_down_triangle_of_numbers(triangle), 2);
     
-    def test_two_row_triangle(self):
+    def test_simple_two_row_triangle(self):
         triangle = [
-              [1],
+            [1],
             [2, 3]
         ]
-        self.assertEqual(get_max_path_down_triangle_of_numbers(triangle), 4)
+
+    def test_simple_three_row_triangle(self):
+        triangle = [
+              [1],
+             [0, 3],
+            [3, 0, 1]
+        ]
+        self.assertEqual(get_max_path_down_triangle_of_numbers(triangle), 5)
