@@ -3,13 +3,6 @@ import unittest
 from problem_18.solution.calculate import NumberTriangle
 
 class TestMaxPathDownTriangleOfNumbers(unittest.TestCase):
-
-    def test_single_row_triangle(self):
-        triangle = [
-            [2]
-        ]
-        number_triangle = NumberTriangle(triangle)
-        self.assertEqual(number_triangle.get_max_path_down(), 2)
     
     def test_simple_two_row_triangle(self):
         triangle = [
@@ -27,6 +20,15 @@ class TestMaxPathDownTriangleOfNumbers(unittest.TestCase):
         ]
         number_triangle = NumberTriangle(triangle)
         self.assertEqual(number_triangle.get_max_path_down(), 5)
+
+    def test_three_row_triangle_where_highest_choice_on_second_row_does_not_lead_to_highest_total(self):
+        triangle = [
+              [1],
+             [0, 3],
+            [9, 0, 1]
+        ]
+        number_triangle = NumberTriangle(triangle)
+        self.assertEqual(number_triangle.get_max_path_down(), 10)
 
     def test_three_row_triangle_with_duplicate_values_on_second_row(self):
         triangle = [
