@@ -6,4 +6,4 @@ def get_sum_of_digits(number):
     return sum(digits)
 
 def get_factorial(number):
-    pass
+    return number
