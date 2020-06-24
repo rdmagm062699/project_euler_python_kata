@@ -14,13 +14,17 @@ def get_max_path_down_triangle_of_numbers(triangle):
 
         if first_possible == second_possible:
             max_sum += first_possible
-            last_max_pos = _handle_dupes(triangle, row_num, pos1, pos2)
+            if _not_last_row(row_num, triangle):
+                last_max_pos = _handle_dupes(triangle, row_num, pos1, pos2)
         else:
             max_value = max([first_possible, second_possible])
             last_max_pos = row.index(max_value)
             max_sum += max_value
 
     return max_sum
+
+def _not_last_row(row_num, triangle):
+    return row_num < len(triangle) - 1
 
 def _handle_dupes(triangle, row_num, pos1, pos2):
     next_row = triangle[row_num + 1]

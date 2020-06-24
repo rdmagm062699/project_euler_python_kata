@@ -31,3 +31,11 @@ class TestMaxPathDownTriangleOfNumbers(unittest.TestCase):
             [1, 0, 3]
         ]
         self.assertEqual(get_max_path_down_triangle_of_numbers(triangle), 6)
+
+    def test_three_row_triangle_with_duplicate_values_on_second_and_third_rows(self):
+        triangle = [
+              [1],
+             [2, 2],
+            [1, 3, 3]
+        ]
+        self.assertEqual(get_max_path_down_triangle_of_numbers(triangle), 6)
