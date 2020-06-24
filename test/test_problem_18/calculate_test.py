@@ -1,6 +1,6 @@
 import unittest
 
-from problem_18.solution.calculate import get_max_path_down_triangle_of_numbers
+from problem_18.solution.calculate import NumberTriangle
 
 class TestMaxPathDownTriangleOfNumbers(unittest.TestCase):
 
@@ -8,13 +8,16 @@ class TestMaxPathDownTriangleOfNumbers(unittest.TestCase):
         triangle = [
             [2]
         ]
-        self.assertEqual(get_max_path_down_triangle_of_numbers(triangle), 2);
+        number_triangle = NumberTriangle(triangle)
+        self.assertEqual(number_triangle.get_max_path_down(), 2)
     
     def test_simple_two_row_triangle(self):
         triangle = [
-            [1],
+             [1],
             [2, 3]
         ]
+        number_triangle = NumberTriangle(triangle)
+        self.assertEqual(number_triangle.get_max_path_down(), 4)
 
     def test_simple_three_row_triangle(self):
         triangle = [
@@ -22,7 +25,8 @@ class TestMaxPathDownTriangleOfNumbers(unittest.TestCase):
              [0, 3],
             [3, 0, 1]
         ]
-        self.assertEqual(get_max_path_down_triangle_of_numbers(triangle), 5)
+        number_triangle = NumberTriangle(triangle)
+        self.assertEqual(number_triangle.get_max_path_down(), 5)
 
     def test_three_row_triangle_with_duplicate_values_on_second_row(self):
         triangle = [
@@ -30,7 +34,8 @@ class TestMaxPathDownTriangleOfNumbers(unittest.TestCase):
              [2, 2],
             [1, 0, 3]
         ]
-        self.assertEqual(get_max_path_down_triangle_of_numbers(triangle), 6)
+        number_triangle = NumberTriangle(triangle)
+        self.assertEqual(number_triangle.get_max_path_down(), 6)
 
     def test_three_row_triangle_with_duplicate_values_on_second_and_third_rows(self):
         triangle = [
@@ -38,4 +43,5 @@ class TestMaxPathDownTriangleOfNumbers(unittest.TestCase):
              [2, 2],
             [1, 3, 3]
         ]
-        self.assertEqual(get_max_path_down_triangle_of_numbers(triangle), 6)
+        number_triangle = NumberTriangle(triangle)
+        self.assertEqual(number_triangle.get_max_path_down(), 6)
