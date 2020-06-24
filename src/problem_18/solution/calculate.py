@@ -5,13 +5,16 @@ def get_max_path_down_triangle_of_numbers(triangle):
 
     for row_num in range(1, len(triangle)):
         row = triangle[row_num]
-        first_possible = row[last_max_pos]
-        second_possible = row[last_max_pos + 1]
+
+        pos1 = last_max_pos
+        pos2 = last_max_pos + 1
+
+        first_possible = row[pos1]
+        second_possible = row[pos2]
 
         if first_possible == second_possible:
-            dupe_max_pos = _handle_dupes(triangle, row_num, last_max_pos, last_max_pos + 1)
-            max_sum += row[dupe_max_pos]
-            last_max_pos = dupe_max_pos
+            max_sum += first_possible
+            last_max_pos = _handle_dupes(triangle, row_num, pos1, pos2)
         else:
             max_value = max([first_possible, second_possible])
             last_max_pos = row.index(max_value)
