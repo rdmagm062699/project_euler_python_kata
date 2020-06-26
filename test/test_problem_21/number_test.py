@@ -6,3 +6,6 @@ class TestGetProperDivisors(unittest.TestCase):
 
     def test_only_proper_divisor_of_2_is_1(self):
         self.assertEqual(get_proper_divisors(2), [1])
+
+    def test_one_has_no_proper_divisors(self):
+        self.assertEqual(get_proper_divisors(1), [])
