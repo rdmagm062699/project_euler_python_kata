@@ -12,3 +12,6 @@ class TestGetProperDivisors(unittest.TestCase):
 
     def test_proper_divisors_of_4_are_1_and_2(self):
         self.assertEqual(get_proper_divisors(4), [1, 2])
+
+    def test_proper_divisors_of_100(self):
+        self.assertEqual(sorted(get_proper_divisors(100)), [1, 2, 4, 5, 10, 20, 25, 50])
