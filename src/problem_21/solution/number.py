@@ -1,3 +1,8 @@
 
 def get_proper_divisors(number):
-    return [1]
+    result = []
+
+    if number > 1:
+        result.append(1)
+
+    return result
