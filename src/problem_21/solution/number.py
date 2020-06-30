@@ -10,3 +10,6 @@ def get_proper_divisors(number):
                 result.extend([div, int(number / div)])
 
     return list(set(result))
+
+def get_sum_of_amicable_numbers_less_than_n(n):
+    pass

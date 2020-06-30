@@ -1,6 +1,6 @@
 import unittest
 
-from problem_21.solution.number import get_proper_divisors
+from src.problem_21.solution.number import get_proper_divisors, get_sum_of_amicable_numbers_less_than_n
 
 class TestGetProperDivisors(unittest.TestCase):
 
@@ -15,3 +15,8 @@ class TestGetProperDivisors(unittest.TestCase):
 
     def test_proper_divisors_of_100(self):
         self.assertEqual(sorted(get_proper_divisors(100)), [1, 2, 4, 5, 10, 20, 25, 50])
+
+class TestGetSumOfAmicableNumbers(unittest.TestCase):
+
+    def test_sum_of_amicable_numbers_under_1_is_0(self):
+        self.assertEqual(get_sum_of_amicable_numbers_less_than_n(1), 0);
