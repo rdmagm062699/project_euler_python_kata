@@ -12,4 +12,12 @@ def get_proper_divisors(number):
     return list(set(result))
 
 def get_sum_of_amicable_numbers_less_than_n(n):
-    return 0
+    value = 0
+
+    for num in range(2, n):
+        check_amicable = sum(get_proper_divisors(num))
+        if num != check_amicable and num == sum(get_proper_divisors(check_amicable)):
+            print("num={}, check_amicable={}".format(num, check_amicable))
+            value += num
+
+    return value
