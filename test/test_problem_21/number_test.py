@@ -20,3 +20,6 @@ class TestGetSumOfAmicableNumbers(unittest.TestCase):
 
     def test_sum_of_amicable_numbers_under_1_is_0(self):
         self.assertEqual(get_sum_of_amicable_numbers_less_than_n(1), 0);
+
+    def test_sum_of_amicable_numbers_under_221_is_220(self):
+        self.assertEqual(get_sum_of_amicable_numbers_less_than_n(221), 220);
