@@ -12,4 +12,4 @@ def get_proper_divisors(number):
     return list(set(result))
 
 def get_sum_of_amicable_numbers_less_than_n(n):
-    pass
+    return 0
