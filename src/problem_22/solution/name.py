@@ -1,5 +1,5 @@
 
-LETTERS = 'ABC'
+LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
 def score_name(name, multiplier): 
     score = 0
