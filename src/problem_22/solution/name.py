@@ -1,3 +1,6 @@
 
 def score_name(name, multiplier):
-    return 1
+    if len(name) == 1: 
+        return 1
+    else:
+        return 3
