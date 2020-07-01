@@ -8,4 +8,4 @@ def score_name(name, multiplier):
         pos = LETTERS.index(letter) + 1
         score += pos
 
-    return score
+    return score * multiplier

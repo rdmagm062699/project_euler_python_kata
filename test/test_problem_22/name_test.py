@@ -15,4 +15,7 @@ class TestScoreName(unittest.TestCase):
 
     def test_name_AZ_with_multiplier_1_scores_27(self):
         self.assertEqual(score_name('AZ', 1), 27)
-        
+    
+    def test_name_AZ_with_multiplier_2_scores_54(self):
+        self.assertEqual(score_name('AZ', 2), 54)
+
