@@ -1,6 +1,7 @@
 from .name import score_name
 
 def score_list_of_names(names): 
+    names.sort() 
     score = 0
 
     for (pos, name) in enumerate(names):

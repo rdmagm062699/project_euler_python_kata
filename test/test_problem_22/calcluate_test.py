@@ -12,3 +12,6 @@ class TestScoreListOfNames(unittest.TestCase):
 
     def test_list_with_names_A_B_C(self):
         self.assertEqual(score_list_of_names(['A', 'B', 'C']), 14)
+
+    def test_list_is_sorted_before_scoring(self):
+        self.assertEqual(score_list_of_names(['C', 'A', 'B']), 14)
