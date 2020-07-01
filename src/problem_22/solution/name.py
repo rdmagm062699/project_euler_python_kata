@@ -1,3 +1,3 @@
 
 def score_name(name, multiplier):
-    pass
+    return 1
