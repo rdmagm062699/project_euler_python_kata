@@ -75,4 +75,14 @@ class Spiral:
         return grid
 
     def get_sum_of_diagonals(self):
-        return 26
+        result = 0
+
+        col_1 = 0
+        col_2 = len(self.grid) - 1
+        for row in range(0, len(self.grid)):
+            result += self.grid[row][col_1]
+            result += self.grid[row][col_2]
+            col_1 += 1
+            col_2 -= 1
+
+        return result

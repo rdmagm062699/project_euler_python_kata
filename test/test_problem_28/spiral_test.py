@@ -24,10 +24,10 @@ class TestSpiral(unittest.TestCase):
 
         self.assertEqual(Spiral(5).grid, expected)
 
-    def test_sum_of_diagonals_in_a_3_by_3_grid_is_26(self):
+    def test_sum_of_diagonals_in_a_3_by_3_grid_is_25(self):
         spiral = Spiral(3)
 
-        self.assertEqual(spiral.get_sum_of_diagonals(), 26)
+        self.assertEqual(spiral.get_sum_of_diagonals(), 25)
 
     def test_sum_of_diagonals_in_a_5_by_5_grid_is_101(self):
         spiral = Spiral(5)
