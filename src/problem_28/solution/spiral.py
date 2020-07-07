@@ -80,8 +80,11 @@ class Spiral:
         col_1 = 0
         col_2 = len(self.grid) - 1
         for row in range(0, len(self.grid)):
-            result += self.grid[row][col_1]
-            result += self.grid[row][col_2]
+            if row == col_1 == col_2:
+                result += self.grid[row][col_1]
+            else:
+                result += self.grid[row][col_1]
+                result += self.grid[row][col_2]
             col_1 += 1
             col_2 -= 1
 
