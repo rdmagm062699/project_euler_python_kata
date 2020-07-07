@@ -27,7 +27,6 @@ class Spiral:
             move_direction = self._next_move
             self._calculate_next_move(move_direction, row, col)
 
-
     def _calculate_next_move(self, move_direction, row, col):
             if move_direction == "right":
                 self._move_to_pos = (row, col + 1)
@@ -65,7 +64,6 @@ class Spiral:
                 else:
                     self._next_move = "up"
 
-
     def _build_initial_grid(self, grid_size):
         grid = []
 
@@ -75,3 +73,6 @@ class Spiral:
                 grid[row].append(0)
 
         return grid
+
+    def sum_of_diagonals(self):
+        pass
