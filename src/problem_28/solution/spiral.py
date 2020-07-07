@@ -1,8 +1,11 @@
 
 class Spiral:
-    def build_spiral(self, grid_size):
-        grid = self._build_grid(grid_size)
-        middle = int(grid_size / 2)
+    def __init__(self, grid_size):
+        self.grid = self._build_initial_grid(grid_size)
+        self._build_spiral()
+
+    def _build_spiral(self):
+        middle = int(len(self.grid) / 2)
 
         right_boundary = middle + 1
         bottom_boundary = middle + 1
@@ -12,11 +15,11 @@ class Spiral:
         next_number = 1
         current_pos = (middle, middle)
 
-        while current_pos != (0, len(grid)):
+        while current_pos != (0, len(self.grid)):
             row = current_pos[0]
             col = current_pos[1]
 
-            grid[row][col] = next_number
+            self.grid[row][col] = next_number
 
             next_number += 1
 
@@ -56,10 +59,8 @@ class Spiral:
                 else:
                     next_move = "up"
 
-        return grid
 
-
-    def _build_grid(self, grid_size):
+    def _build_initial_grid(self, grid_size):
         grid = []
 
         for row in range(0, grid_size):

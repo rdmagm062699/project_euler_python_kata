@@ -10,7 +10,7 @@ class TestSpiral(unittest.TestCase):
             [6, 1, 2],
             [5, 4, 3]
         ] 
-        self.assertEqual(Spiral().build_spiral(3), expected)
+        self.assertEqual(Spiral(3).grid, expected)
 
 
     def test_spiral_in_a_5_by_5_grid(self):
@@ -22,4 +22,4 @@ class TestSpiral(unittest.TestCase):
             [17, 16, 15, 14, 13]
         ]
 
-        self.assertEqual(Spiral().build_spiral(5), expected)
+        self.assertEqual(Spiral(5).grid, expected)
