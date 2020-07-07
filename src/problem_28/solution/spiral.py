@@ -1,5 +1,5 @@
 
-class Grid:
+class Spiral:
     def build_spiral(self, grid_size):
         grid = self._build_grid(grid_size)
         middle = int(grid_size / 2)
