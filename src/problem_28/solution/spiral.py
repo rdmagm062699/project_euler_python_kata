@@ -74,5 +74,5 @@ class Spiral:
 
         return grid
 
-    def sum_of_diagonals(self):
+    def get_sum_of_diagonals(self):
         return 26

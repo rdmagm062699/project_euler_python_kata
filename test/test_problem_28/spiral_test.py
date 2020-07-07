@@ -27,4 +27,9 @@ class TestSpiral(unittest.TestCase):
     def test_sum_of_diagonals_in_a_3_by_3_grid_is_26(self):
         spiral = Spiral(3)
 
-        self.assertEqual(spiral.sum_of_diagonals(), 26)
+        self.assertEqual(spiral.get_sum_of_diagonals(), 26)
+
+    def test_sum_of_diagonals_in_a_5_by_5_grid_is_101(self):
+        spiral = Spiral(5)
+
+        self.assertEqual(spiral.get_sum_of_diagonals(), 101)
