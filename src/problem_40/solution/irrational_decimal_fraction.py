@@ -1,6 +1,11 @@
 
 class IrrationalDecimalFraction:
     def __init__(self, length):
-        integers = '123456789'
+        digits = '0123456789'
 
-        self.value = integers[0:length]
+        if length < 10:
+            self.value = digits[1:length + 1]
+        else:
+            tempValue = '123456789'
+            nextChunk = ''.join(['1' + digit for digit in digits])
+            self.value = tempValue + nextChunk
