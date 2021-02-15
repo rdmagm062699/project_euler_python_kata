@@ -13,4 +13,4 @@ class IrrationalDecimalFraction:
                 tempValue += nextChunk
                 nextStart += 1
 
-            self.value = tempValue
+            self.value = tempValue[0:length]

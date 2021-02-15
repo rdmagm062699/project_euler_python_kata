@@ -24,3 +24,7 @@ class TestIrrationalDecimalFraction(unittest.TestCase):
     def test_length_of_forty_nine(self):
         expected = '1234567891011121314151617181920212223242526272829'
         self.assertEqual(IrrationalDecimalFraction(49).value, expected)
+
+    def test_length_of_twenty(self):
+        expected = '12345678910111213141'
+        self.assertEqual(IrrationalDecimalFraction(20).value, expected)
