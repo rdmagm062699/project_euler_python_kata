@@ -7,5 +7,10 @@ class IrrationalDecimalFraction:
             self.value = digits[1:length + 1]
         else:
             tempValue = '123456789'
-            nextChunk = ''.join(['1' + digit for digit in digits])
-            self.value = tempValue + nextChunk
+            nextStart = 1
+            while len(tempValue) < length:
+                nextChunk = ''.join([str(nextStart) + digit for digit in digits])
+                tempValue += nextChunk
+                nextStart += 1
+
+            self.value = tempValue
