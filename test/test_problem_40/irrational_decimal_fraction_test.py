@@ -12,3 +12,7 @@ class TestIrrationalDecimalFraction(unittest.TestCase):
     def test_length_of_one(self):
         expected = '1'
         self.assertEqual(IrrationalDecimalFraction(1).value, expected)
+
+    def test_length_of_two(self):
+        expected = '12'
+        self.assertEqual(IrrationalDecimalFraction(2).value, expected)
