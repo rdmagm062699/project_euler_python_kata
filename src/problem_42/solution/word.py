@@ -1,3 +1,3 @@
 
 def get_word_value(word):
-    return 1
+    return len(word)

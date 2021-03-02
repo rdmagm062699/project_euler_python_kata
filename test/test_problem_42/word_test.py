@@ -7,3 +7,6 @@ class TestWordValue(unittest.TestCase):
 
     def test_value_of_word_A(self):
         self.assertEqual(get_word_value('A'), 1)
+
+    def test_value_of_word_AA(self):
+        self.assertEqual(get_word_value('AA'), 2)
