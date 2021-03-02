@@ -1,6 +1,6 @@
 import unittest
 
-from problem_42.solution.triangle_number import is_triangle_number
+from problem_42.solution.number import is_triangle_number
 
 
 class TestTriangleNumber(unittest.TestCase):
