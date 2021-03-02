@@ -1,6 +1,16 @@
 
 def is_triangle_number(number):
-    if number in [1, 3]:
-        return True
+    n = 1
+    stop = False
 
-    return False
+    while stop == False:
+        t_num = get_nth_triangle_number(n)
+        if t_num >= number:
+            stop = True
+        else:
+            n += 1
+
+    return number == t_num
+
+def get_nth_triangle_number(n):
+    return (.5 * n) * (n + 1)

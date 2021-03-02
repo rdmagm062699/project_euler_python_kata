@@ -13,3 +13,6 @@ class TestTriangleNumber(unittest.TestCase):
 
     def test_three_is_a_triangle_number(self):
         self.assertEqual(is_triangle_number(3), True)
+
+    def test_twenty_eight_is_a_triangle_number(self):
+        self.assertEqual(is_triangle_number(28), True)
