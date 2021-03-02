@@ -7,3 +7,6 @@ class TestTriangleNumber(unittest.TestCase):
 
     def test_zero_is_not_a_triangle_number(self):
         self.assertEqual(is_triangle_number(0), False)
+
+    def test_one_is_a_triangle_number(self):
+        self.assertEqual(is_triangle_number(1), True)
