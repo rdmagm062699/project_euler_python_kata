@@ -22,3 +22,6 @@ class TestTriangleWord(unittest.TestCase):
 
     def test_AS_is_not_triangle_word(self):
         self.assertEqual(is_triangle_word('AS'), False)
+
+    def test_SKY_is_triangle_word(self):
+        self.assertEqual(is_triangle_word('SKY'), True)

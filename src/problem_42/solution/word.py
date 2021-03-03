@@ -1,12 +1,13 @@
+from .number import is_triangle_number
+
 
 LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
 
 def is_triangle_word(word):
-    if word == 'A':
-        return True;
-        
-    return False;
+    word_value = get_word_value(word)
+
+    return is_triangle_number(word_value);
 
 
 def get_word_value(word):
