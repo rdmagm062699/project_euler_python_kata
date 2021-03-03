@@ -1,6 +1,11 @@
 
 LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
+
+def is_triangle_word(word):
+    return True;
+
+
 def get_word_value(word):
     value = 0
     for letter in word:
