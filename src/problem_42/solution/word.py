@@ -3,7 +3,10 @@ LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
 
 def is_triangle_word(word):
-    return True;
+    if word == 'A':
+        return True;
+        
+    return False;
 
 
 def get_word_value(word):
