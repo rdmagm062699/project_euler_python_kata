@@ -1,6 +1,8 @@
 
 def get_power_sequence_sum(start, end):
-    if end > 1:
-        return 5
+    total = 0
+    
+    for num in range(start, end + 1):
+        total += num ** num
 
-    return 1
+    return total
