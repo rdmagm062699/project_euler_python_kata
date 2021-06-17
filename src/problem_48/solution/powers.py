@@ -1,3 +1,3 @@
 
-def get_power_sequence():
-    pass
+def get_power_sequence(start, end):
+    return 1
